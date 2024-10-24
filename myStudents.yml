@@ -1,0 +1,27 @@
+---
+- myStudents: 
+  - name: anil
+    phno: 889898989
+    email: anil@gmail.com
+    address: 
+      doorno: 101
+      StreetNO: 2nd
+      pinCode: 5000072
+
+  - name: sunil
+    phno: 8989898989
+    email: sunil@gmail.com
+    address:
+        doorno: 201
+        StreetNO: 3rd 
+        pinCode: 500082
+
+  - name: venil
+    phno: 8989898989
+    email: venil@gmail.com
+    address: 
+          doorno: 301
+          StreetNO: 3rd 
+          pinCode: 5000092
+
+  
