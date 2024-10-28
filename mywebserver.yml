@@ -16,5 +16,18 @@
     when: ansible_os_family =="Debian"
 
 
+  - name: i want to install my httpd webserver on ansible amazon nodes (yum install httpd)
+    dnf:
+       name: httpd
+       state: present
+    when: ansible_os_family=="RedHat"
+      
+  - name: i want to start my htttp webserve ron amazon nodes (service httpd start)
+    service:
+      name: httpd
+      state: started
+    when: ansible_os_family=="RedHat"
+      
+
 
 
