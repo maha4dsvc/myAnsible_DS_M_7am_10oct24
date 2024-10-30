@@ -19,7 +19,4 @@
 [myredhatnodes]
 172.31.27.114
 
-[mywebservers:vars]
-variable=value
-myubuntuwebpack=apache2
-myredhatwebpack=httpd
+
