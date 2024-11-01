@@ -1,5 +1,5 @@
 ---
  - name: i want to create a file 
-    file:
+   file:
       path: /home/maha/myfile01
       state: touch
