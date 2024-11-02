@@ -11,8 +11,20 @@
     apt:
      name: apache2 
      state: present
-
+ 
   - name: copy my index file into node side
     template:
        src: myindex.j2
        dest:  /var/www/html/index.html
+    notify: restartwebserver
+
+  handler:
+  - name: restartwebserver 
+    service:
+        name: apache2
+        state: restarted
+
+
+  
+
+    
