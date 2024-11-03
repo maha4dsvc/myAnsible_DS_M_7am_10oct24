@@ -7,7 +7,8 @@
 
 - name: create a directory 
   file: 
-    directory: /opt/tomcat
+    path: /opt/tomcat
+    state: directory
 
 
 - name: i want to extract tar 
