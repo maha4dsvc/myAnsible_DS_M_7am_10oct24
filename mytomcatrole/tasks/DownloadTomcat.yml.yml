@@ -1,0 +1,16 @@
+---
+- name: Download and Install Apache Tomcat on Debian 
+  get_url:
+    url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.31/bin/apache-tomcat-10.1.31.tar.gz
+    dest: /home/maha/apache-tomcat-10.1.31.tar.gz
+    force_basic_auth: yes
+
+- name: create a directory 
+  file: 
+    directory: /opt/tomcat
+
+
+- name: i want to extract tar 
+  unarchive:
+    src: /home/maha/apache-tomcat-10.1.31.tar.gz
+    dest: /opt/tomcat
