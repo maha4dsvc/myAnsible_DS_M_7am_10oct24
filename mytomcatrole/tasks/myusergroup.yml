@@ -1,4 +1,9 @@
 ---
+- name: Create a group 
+  group:
+    name: tomcat
+    state: present
+
 - name: create user 
   user: 
      name: tomcat
@@ -7,7 +12,3 @@
      home: /opt/tomcat
      state: present
 
-- name: Create a group 
-  group:
-    name: tomcat
-    state: present
